@@ -7,10 +7,21 @@ function jourtravaille(date){
 
 
     const jour = date.getDate();
-    const mois = date.Month() + 1;
+    const mois = date.getMonth() + 1;
     const annee = date.getFullYear();
-    const jourSemaine = date.getday();
+    const jourSemaine = date.getDay();
     const dateStr = `${annee}-${String(mois).padStart(2 , "0")}-${String(jour).padStart(2 ,"0")}`;
 
+    if (joursferies2020.includes(dateStr)) {
+        console.log(`Le ${jour}/${mois}/${annee} est un jour ferié.`);
+    } else if(jourSemaine === 0 || jourSemaine === 6){
+        console.log(`Non , le ${jour}/${mois}/${annee} est un week-end.`);
+    } else {
+            console.log (`Oui, le ${jour}${mois}/${annee} ets un jour travaillé.`);
+        }
+    }
+
+
+    jourtravaille(new Date("2020-05-01"));
+
     
-}
