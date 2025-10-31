@@ -7,8 +7,8 @@
     <script src ="script.js" defer></script> 
 </head>
 <body>
-    <article id ="citation">La vie a beaucoup plus d'imagination que nous.</article>
-    <button id ="button">Afficher la citation</button>
+    
+    <button id="button">Afficher / Masquer le texte</button>
     
 </body>
 </html>
