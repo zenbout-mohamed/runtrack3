@@ -1,0 +1,11 @@
+body{
+    transition:all 0.5s ease;
+    text-align:center;
+    padding-top:200px;
+}
+
+.konami{
+    background-color: #00274d;
+    color: rgb(32, 166, 153);
+    font-family: "Courier New", Courier, monospace;
+}
