@@ -1,0 +1,5 @@
+[
+    {"id": 1, "name": "Bulbizarre", "type": ["Plante", "Poison"]},
+    {"id": 4, "name": "Salamèche", "type": ["Feu"]},
+    {"id": 7, "name": "Carapuce", "type": ["Eau"]}
+]
