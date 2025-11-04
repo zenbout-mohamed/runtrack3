@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0f14;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #00b4d8;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 4px;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
