@@ -22,7 +22,7 @@ function createImages(list){
 function shuffle(){
     shuffled = [...images].sort(() => Math.random() - 0.5);
     createImages(shuffled);
-    message.textContent = ""; // <-- corrigé ici
+    message.textContent = ""; 
 }
 
 let dragged;
