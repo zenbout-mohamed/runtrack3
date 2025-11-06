@@ -22,7 +22,7 @@ session_start();
             <p class ="text-red-500 text-sm error-message" id ="loginEmailError"></p>
         </div>
         <div>
-            <label for="password"Mot de Passe :</label>
+            <label for="password">Mot de Passe :</label>
             <input class ="w-full p-2 rounded" type="password" name="password" placeholder ="" required>
             <p class ="text-red-500 text-sm error-message" id ="loginPasswordError"></p>
         </div>
