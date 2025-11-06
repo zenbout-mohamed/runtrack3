@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jour05 -Projet</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="script.js"></script>
 </head>

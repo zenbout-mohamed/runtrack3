@@ -6,7 +6,7 @@ require_once "config.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript - Job02</title>
+    <title>Jour05 -Projet</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src ="script.js"></script>
 </head>
