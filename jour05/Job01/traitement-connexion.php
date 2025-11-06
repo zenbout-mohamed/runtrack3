@@ -13,7 +13,7 @@ if(empty($password)) $erreur['password'] = " Mot de passe requis ";
 
 if(empty($erreur)){
     $stmt = $pdo->prepare("SELECT * FROM utilisateurs_1 WHERE email = ?");
-    $stmt->execute(['email']);
+    $stmt->execute([$email]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
