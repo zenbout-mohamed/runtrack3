@@ -21,6 +21,14 @@ session_start();
             <input class ="w-full p-2 rounded" type="email" name="email" placeholder ="" required>
             <p class ="text-red-500 text-sm error-message" id ="loginEmailError"></p>
         </div>
+        <div>
+            <label for="password"Mot de Passe :</label>
+            <input class ="w-full p-2 rounded" type="password" name="password" placeholder ="" required>
+            <p class ="text-red-500 text-sm error-message" id ="loginPasswordError"></p>
+        </div>
+
+        <button type="submit" class ="bg-indigo-600 text-white py-2 rounded hover:bg-indigo-600">Se Connecter</button>
+        <p class ="text-sm text-center mt-2">Pas encore de compte ? <a href ="inscription.php" class ="text-teal-600 hover:underline">S'inscrire</a></p>
     </form>
     </section>
 </body>
