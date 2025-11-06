@@ -34,5 +34,29 @@ document.addEventListener('DOMContentLoaded',() => {
 
     // BLOC POUR LA CONNEXION :
 
-    
+    const formConnexion = document.getElementById("formConnexion");
+    if (formConnexion) {
+        formConnexion.addEventListener("submit", async(e) => {
+            e.preventDefault();
+
+            const formData = formData(formConnexion);
+
+            const response = await fetch("traitement-connexion" , {
+                method :"POST",
+                body : formData
+            });
+
+            const result = await response.json();
+
+            document.querySelectorAll(".error-message").forEach(el => el.textContent ="");
+
+            if(result.success){
+                window.location.href ="index.php";                
+            } else {
+                for (const[champ,message] of Object.entries(result.errors)){
+                    document.getElementById("login" + champ.charAt(0).toUpperCase() + champ.slice(1) + "Error").textContent = message;
+                }
+            }
+        });
+    }
 });
