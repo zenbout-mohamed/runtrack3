@@ -8,7 +8,7 @@ require_once "config.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jour05 -Projet</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src ="script.js"></script>
+    <script defer src ="script.js"></script>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 <section class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">

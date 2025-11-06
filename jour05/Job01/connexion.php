@@ -27,7 +27,7 @@ session_start();
             <p class ="text-red-500 text-sm error-message" id ="loginPasswordError"></p>
         </div>
 
-        <button type="submit" class ="bg-indigo-600 text-white py-2 rounded hover:bg-indigo-600">Se Connecter</button>
+        <button type="submit" class ="bg-indigo-500 text-white py-2 rounded hover:bg-indigo-600">Se Connecter</button>
         <p class ="text-sm text-center mt-2">Pas encore de compte ? <a href ="inscription.php" class ="text-teal-600 hover:underline">S'inscrire</a></p>
     </form>
     </section>
