@@ -1,17 +1,18 @@
 <?php
-require_once "config.php";
+require_once __DIR__ . "/config.php";
+
 session_start();
 
 header('Content-Type: application/json');
-$errors = [];
+$erreurs = [];
 
 $email = trim($_POST['email'] ?? '');
 $password = $_POST['password'] ?? '';
 
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors['email'] = "Email invalide.";
-if (empty($password)) $errors['password'] = "Mot de passe requis.";
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $erreurs['email'] = "Email invalide.";
+if (empty($password)) $erreurs['password'] = "Mot de passe requis.";
 
-if (empty($errors)) {
+if (empty($erreurs)) {
     $stmt = $pdo->prepare("SELECT * FROM utilisateurs_1 WHERE email = ?");
     $stmt->execute([$email]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -22,10 +23,9 @@ if (empty($errors)) {
         echo json_encode(['success' => true]);
         exit;
     } else {
-        $errors['email'] = "Identifiant ou mot de passe incorrect.";
+        $erreurs['email'] = "Identifiants incorrects.";
     }
 }
 
-echo json_encode(['success' => false, 'errors' => $errors]);
-exit;
+echo json_encode(['success' => false, 'errors' => $erreurs]);
 ?>
