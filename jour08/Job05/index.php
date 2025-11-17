@@ -6,6 +6,7 @@
     <title>Reproduction-Site - LARACON</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/a2e0e6d9f8.js" crossorigin="anonymous"></script>
+    <script defer src="./assets/js/main.js"></script>
 </head>
 <body class ="bg-gradient-to-br from-purple-400 via-indigo-500 to-blue-700 text-white min-h-screen">
     <header class ="flex items-center justify-between px-8 py-6">
