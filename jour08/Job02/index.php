@@ -13,9 +13,9 @@
             <h1 class ="text-xl font-bold">Mon site :</h1>
             <ul class ="flex space-x-6">
                 <li><a href="index.php" class ="hover:text-yellow-300">Accueil</a></li>
-                <li><a href="index.php">Inscription</a></li>
-                <li><a href="index.php">Connexion</a></li>
-                <li><a href="index.php">Rechercher</a></li>
+                <li><a href="index.php" class ="hover:text-yellow-300">Inscription</a></li>
+                <li><a href="index.php" class ="hover:text-yellow-300">Connexion</a></li>
+                <li><a href="index.php" class ="hover:text-yellow-300">Rechercher</a></li>
             </ul>
         </nav>
     </header>
