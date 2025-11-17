@@ -26,9 +26,52 @@
             <a href="#" class ="hover:text-yellow-300">Schedule</a>
             <a href="#" class ="hover:text-yellow-300">Tickets</a>
         </nav>
-
-
     </header>
+
+    <section class ="text-center mt-24 px-4">
+        <h2 class ="text-5xl md:text-6xl font-extrabold leading-tight">Laracon Outline
+            <span class ="text-yellow-300">The Global Laravel Conference</span>
+        </h2>
+        <p class ="mt-6 text-xl md:text-2xl text-indigo-200 max-w-2xl mx-auto">
+            Join thousands of developers from around the world for a full day of 
+            Laravel talks, networking, and inspiration.
+        </p>
+
+        <a href="#" class ="inline-block mt-10 bg-yellow-300 text-black px-8 py-4 rounded-full text-xl font-semibold shadow-kg hover:bg-yellow-400 transition">
+            Get Your Tickets Now
+        </a>
+    </section>
+    <section class ="mt-24 text-center px-6">
+        <h3 class ="text-3xl font-bold mb-6">What To Expect</h3>
+
+        <div class ="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+            <div class ="bg-white/10 rounded-xl p-6 backdrop-blur-md shadow-xl">
+                <i class="fa-solid fa-microphone text-4xl text-yellow-300"></i>
+                <p class ="mt-4 text-xl font-semibold">World-Class Speakers</p>
+                <p class ="mt-2 text-indigo-200">Hear from the creators and top contributors of Laravel.</p>
+            </div>
+        </div>
+
+        <div class ="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+            <div class ="bg-white/10 rounded-xl p-6 backdrop-blur-md shadow-xl">
+                <i class="fa-solid fa-microphone text-4xl text-yellow-300"></i>
+                <p class ="mt-4 text-xl font-semibold">Global Community</p>
+                <p class ="mt-2 text-indigo-200">Meet and chat with thousands of developers from 100+ countries.</p>
+            </div>
+        </div>
+
+        <div class ="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+            <div class ="bg-white/10 rounded-xl p-6 backdrop-blur-md shadow-xl">
+                <i class="fa-solid fa-microphone text-4xl text-yellow-300"></i>
+                <p class ="mt-4 text-xl font-semibold">Live & Replay</p>
+                <p class ="mt-2 text-indigo-200">Watch live, or enjoy lifetime replays anytime you want.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class ="mt-24 py-6 text-center bg-black/20 backdrop-blur-lg">
+        <p class ="text-indigo-200">&copy; 2025 Laracon Reproduction — TailwindCSS Showcase</p>
+    </footer>
     
 </body>
 </html>
