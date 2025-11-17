@@ -19,8 +19,13 @@
         <!-- Partie HAMBURGER -->
          <div id ="hamburger" class ="md:hidden text-3xl cursor-pointer">☰</div>
 
-         <!-- Partie HAMBURGER -->
-
+        <!-- Mobile Menu -->
+        <nav id ="mobileMenu" class ="hidden flex-col items-center gap-4 text-lg bg-indigo-700 py-6 md:hidden">
+            <a href="#" class ="hover:text-yellow-300">Home</a>
+            <a href="#" class ="hover:text-yellow-300">Speakers</a>
+            <a href="#" class ="hover:text-yellow-300">Schedule</a>
+            <a href="#" class ="hover:text-yellow-300">Tickets</a>
+        </nav>
 
 
     </header>
