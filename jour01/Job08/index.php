@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript - Job08t</title>
+    <title>Javascript - Job08</title>
     <script src ="script.js"></script>
 </head>
 <body>

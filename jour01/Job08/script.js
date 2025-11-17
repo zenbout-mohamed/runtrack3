@@ -13,10 +13,10 @@ function estPremier(n){
 function sommenombrespremiers(a , b){
     if (estPremier(a) && estPremier(b)) {
         return a + b ;
-    }else {
+    } else {
         return false;
     }
 }
 
 console.log(sommenombrespremiers(3 , 5));
-console.log(sommenombrespremiers(4 , 5));
+console.log(sommenombrespremiers(8 , 5));
