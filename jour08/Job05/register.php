@@ -51,12 +51,38 @@ session_start();
                     <input type="email" name="email" class ="w-full p-2 rounded bg-white/10 border border-white/20" required>
                     <p id ="emailError" class ="text-red-300 text-sm mt-1 error-msg"></p>
                 </div>
+                <div class ="flex gap-3">
+                    <div class ="flex-1">
+                        <label class ="block text-sm mb-1" for="">Mot de passe :</label>
+                        <input type="password" name ="password" class ="w-full p-2 rounded bg-white/10 border border-white/20" required>
+                        <p id ="passwordError" class ="text-red-300 text-sm mt-1 error-msg"></p>
+                    </div>
+                
+                    <div class ="flex-1">
+                        <label class ="block text-sm mb-1" for="">Confirmation Mot de Passe :</label>
+                        <input type="confirm" name ="password" class ="w-full p-2 rounded bg-white/10 border border-white/20" required>
+                        <p id ="confirmError" class ="text-red-300 text-sm mt-1 error-msg"></p>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend class ="mb-2">Passions</legend>
+                    <div class ="grid grid-cols-2 gap-2">
+                        <label class ="flex items-center gap-2" for=""><input type="checkbox" name ="passions[]" value ="informatique">Informatique</label>
+                        <label class ="flex items-center gap-2" for=""><input type="checkbox" name ="passions[]" value ="voyage">Voyage</label>
+                        <label class ="flex items-center gap-2" for=""><input type="checkbox" name ="passions[]" value ="sport">Sport</label>
+                        <label class ="flex items-center gap-2" for=""><input type="checkbox" name ="passions[]" value ="lecture">Lecture</label>
+                    </div>
+                </fieldset>
+
+                <button type ="submit" class ="w-full bg-yellow-300 text-black py-2 rounded">S'inscrire</button>
             </form>
-
         </section>
-        
-
     </main>
+
+    <footer class ="py-6 text-center text-indigo-200">
+        &copy; 2025 Laracon Reproduction — TailwindCSS Showcase
+    </footer>
 </body>
 </html>
 
