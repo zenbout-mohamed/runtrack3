@@ -27,7 +27,30 @@ session_start();
             <h2 class ="text-2xl font-semibold mb-4">Créer un compte :</h2>
 
             <form id ="formRegister" action="" method="post" class ="space-y-4">
-                
+                <div>
+                    <label class ="block mb-1" for="">Civilité : </label>
+                    <div class ="flex gap-4">
+                        <label class ="flex items-center gap-2"><input type="radio" name="civilite" value ="monsieur">Monsieur</label>
+                        <label class ="flex items-center gap-2"><input type="radio" name="civilite" value ="madame">Madame</label>
+                        <label class ="flex items-center gap-2"><input type="radio" name="civilite" value ="autre">Autre</label>
+                    </div>
+                </div>
+                <div class ="flex gap-3">
+                    <div class ="flex-1">
+                        <label class ="block text-sm mb-1" for="">Prénom :</label>
+                        <input type="text" name ="prenom" class ="w-full p-2 rounded bg-white/10 border border-white/20" required>
+                        <p id ="nomError" class ="text-red-300 text-sm mt-1 error-msg"></p>
+                    </div>
+                </div>
+                <div>
+                    <label class ="text-sm block mb-1" for="adresse">Adresse :</label>
+                    <input type="text" name ="adresse" class ="w-full p-2 rounded bg-white/10 border border-white/20"required>
+                </div>
+                <div>
+                    <label class ="email" for="email">Email</label>
+                    <input type="email" name="email" class ="w-full p-2 rounded bg-white/10 border border-white/20" required>
+                    <p id ="emailError" class ="text-red-300 text-sm mt-1 error-msg"></p>
+                </div>
             </form>
 
         </section>
