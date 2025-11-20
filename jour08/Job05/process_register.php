@@ -26,7 +26,7 @@ if($password !== $confirm)$errors['confirm'] = "Les mots de passes ne correspond
 
 if(!empty($errors)){
     $stmt = $pdo->prepare("SELECT id FROM users WHERE email = ?");
-    $stmt->execute(['email']);
+    $stmt->execute([$email]);
     if($stmt->fetch()) $errors['email'] = "Cet E-Mail est déja utilisé.";
     
 }
@@ -37,7 +37,7 @@ if(!empty($errors)){
 
 // Mot de passe : 
 
-$hash = $password_hash($password, PASSWORD_DEFAULT);
+$hash = password_hash($password, PASSWORD_DEFAULT);
 $passions_serial = !empty($passions) ? json_encode(array_values($passions)) : null;
 
 $stmt = $pdo->prepare("INSERT INTO users (civilite, prenom, nom, adresse, email, password, passions)') VALUES (?,?,?,?,?,?,?)");
