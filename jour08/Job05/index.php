@@ -37,7 +37,8 @@ session_start();
        <?php if(!empty($_SESSION['prenom'])): ?>
         <h2 class ="text-4xl font-bold">Bonjour : <?= htmlspecialchars($_SESSION['prenom']) ?> !</h2>  
         <p class ="mt-4">Vous etes connectés !</p>
-        <a href="logout.php" class ="inline-block mt-6 bg-yellow-300 text-black px-4 py-2 rounded">D</a>
+        <a href="logout.php" class="inline-block mt-6 bg-yellow-300 text-black px-4 py-2 rounded">Déconnexion</a>
+
         <?php else : ?>
             <h2 class ="text-5xl md:text-6xl font-extrabold leading-tight">
                 Laracon Online 
