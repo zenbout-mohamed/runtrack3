@@ -35,6 +35,17 @@ if(!empty($errors)){
     exit;
 }
 
+// Mot de passe : 
+
+$hash = $password_hash($password, PASSWORD_DEFAULT);
+$passions_serial = !empty($passions) ? json_encode(array_values($passions)) : null;
+
+$stmt = $pdo->prepare("INSERT INTO users (civilite, prenom, nom, adresse, email, password, passions)') VALUES (?,?,?,?,?,?,?)");
+$stmt->execute([$civilite, $prenom, $nom, $adresse, $email, $hash, $passions_serial]);
+
+echo json_encode(['success' => true]);
+exit;
+
 
 
 
