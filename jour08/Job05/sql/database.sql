@@ -1,3 +1,4 @@
+-- Active: 1753689472411@@127.0.0.1@3306@site_laracon
 CREATE DATABASE IF NOT EXISTS site_laracon CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
 USE site_laracon;

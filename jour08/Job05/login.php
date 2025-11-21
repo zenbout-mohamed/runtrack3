@@ -13,7 +13,7 @@ session_start();
     <script defer src="./assets/js/auth.js"></script>
 </head>
 <body class ="bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-800 text-white min-h-screen">
-    <header class ="flex items-center justify-between px-8 py-6">
+    <header class="flex items-center justify-between px-8 py-6 bg-white/10 backdrop-blur-lg shadow-lg">
         <h1 class ="text-2xl font-extrabold">Laracon</h1>
         <div id ="hamburger" class ="md:hidden text-3xl cursor-pointer">☰</div>
     </header>
